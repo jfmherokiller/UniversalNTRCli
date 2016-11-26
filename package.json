@@ -1,0 +1,25 @@
+{
+  "name": "UniversalNTRCli",
+  "main": "main.js",
+  "description": "Universal NTR Client.",
+  "license": "MIT",
+  "readme": "README.md",
+  "author": "zaksabeast",
+  "version": "0.1.0",
+  "scripts": {
+    "start": "electron .",
+    "build-mac": "electron-packager . UniversalNTRCli --out=builds --platform=darwin --arch=x64 --app-category-type=public.app-category.games --icon=./assets/icon.icns",
+    "build-linux": "electron-packager . UniversalNTRCli --out=builds --platform=linux --arch=x64 --icon=./assets/icon.png",
+    "build-linux-32": "electron-packager . UniversalNTRCli --out=builds --platform=linux --arch=ia32 --icon=./assets/icon.png",
+    "build-win": "electron-packager . UniversalNTRCli --out=builds --platform=win32 --arch=x64 --icon=./assets/icon.ico",
+    "build-win-32": "electron-packager . UniversalNTRCli --out=builds --platform=win32 --arch=ia32 --icon=./assets/icon.ico"
+  },
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "ntrclient": "github:cu3po42/ntrclientjs"
+  },
+  "devDependencies": {
+    "electron": "^1.4.7",
+    "electron-packager": "^8.3.0"
+  }
+}

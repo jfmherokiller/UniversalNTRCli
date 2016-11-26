@@ -1,0 +1,97 @@
+/* CSS3 Button help:
+http://codepen.io/benague/pen/bLBCd
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+body {
+    background-color: rgba(255, 255, 255, .3);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+    font-size: 15px;
+    vertical-align: text-top;
+    font-family: 'Open Sans', 'sans-serif';
+}
+.command {
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .2);
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .2);
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 39px;
+    width: 202px;
+    font-size: 15px;
+    background-color: rgba(186, 186, 186, .1);
+    float: left;
+}
+
+.subCommand {
+    width: 100px;
+}
+
+.console {
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .2);
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .2);
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 350px;
+    width: 100%;
+    font-size: 15px;
+    background-color: rgba(186, 186, 186, .1);
+    vertical-align: text-top;
+}
+
+div {
+    padding-bottom: 2%;
+    width: 100%;
+    vertical-align: text-top;
+/*    border: 3px solid red;*/
+}
+
+.button {
+  cursor: default;
+  margin-left: 2%;
+  margin-bottom: 2%;
+  border-radius: 3px;
+  text-decoration: none;
+  padding: 2%;
+  width: 145px;
+  font-size: 15px;
+  transition: .3s;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -o-transition: .3s;
+  display: inline-block;
+  float: left;
+}
+
+.subBtn {
+    height: 25px;
+    margin-bottom: 4%;
+}
+
+.blue {
+  color: #55acee;
+  border: 2px #55acee solid;
+}
+
+.blue:hover {
+  background-color: #55acee;
+  color: #fff
+}
+
+textarea {
+    resize: none;
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    vertical-align: top;
+    width: 45%;
+}

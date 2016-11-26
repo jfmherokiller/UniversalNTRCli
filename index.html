@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head id="header">
+        <link rel="stylesheet" type="text/css" href="./style.css">
+        <title>UniversalNTRCli</title>
+        <script src="./scripts/clientHandler.js"></script>
+    </head>
+    <body id="body">
+        <table id="consoleTable">
+            <tr>
+                <td colspan="3">
+                    <textarea id="console" class="console" disabled></textarea>
+                </td>
+                <td colspan="1" style="display:none;" id="plugins">
+                </td>
+            </tr>
+        </table>
+        <table id="contentTable" style="width:660px;">
+            <tr>
+                <td colspan="1">
+                    <input id="ip" class="command" type="text" name="ip" placeholder="3ds IP Address" />
+                    <a class="button blue" id="conNTR">Connect</a>
+                    <br />
+                    <select class="command" id="pidList">
+                    </select>
+                    <a class="button blue" id="listProc">List PIDs</a>
+                    <br />
+                    <select class="command" id="memLoc">
+                    </select>
+                    <a class="button blue" id="saveMemDump">Dump Memory</a>
+                    <input id="fileLoc" class="command" type="text" placeholder="MemDump File" style="display:none;" />
+                </td>
+                <td colspan="1" style="width:25%;">
+                    <a class="button blue subBtn" id="hello">Hello!</a>
+                    <a class="button blue subBtn" id="credits">Credits</a>
+                    <a class="button blue subBtn" id="pluginLoad">Example Plugin</a>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="1">
+                    <input id="readAddrField" class="command subCommand" type="text" placeholder="Addr" style="margin-right:2px;" />
+                    <input id="readAddrLength" class="command subCommand" type="text" placeholder="Byte Length" />
+                    <a class="button blue" id="readAddrAct">Read HEX Addr</a>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="1">
+                    <input id="writeAddrField" class="command subCommand" type="text" placeholder="Addr" style="margin-right:2px;" />
+                    <input id="valueAddrField" class="command subCommand" type="text" placeholder="Value" />
+                    <a class="button blue" id="writeAddrAct">Write HEX Addr</a>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
