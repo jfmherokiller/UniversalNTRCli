@@ -9,7 +9,7 @@ Windows users who want the package will need to refer to the [Building](#Buildin
 
 This is in Beta, so expect bugs.
 
-See the [Add-Ons](#Add-Ons) section below for information on custom plugins, and the [Example Plugin](#Example-Plugin) section for usage of the example included.
+See the Add-Ons section below for information on custom plugins, and the Example Plugin section for usage of the example included.
 
 ## Screenshots
 [![Main Screen](screenshots/screenshot-2.png?raw=true)](#Usage)
