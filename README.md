@@ -5,11 +5,11 @@ Systems that have packages:
 * [Mac OS X](https://github.com/zaksabeast/UniversalNTRCli/releases)
 * [Linux (32/64 bit)](https://github.com/zaksabeast/UniversalNTRCli/releases)
 
-Windows users who want the package will need to refer to the [Building](#Building) instructions.
+Windows users who want the package will need to refer to the [Building](#building) instructions.
 
 This is in Beta, so expect bugs.
 
-See the Add-Ons section below for information on custom plugins, and the Example Plugin section for usage of the example included.
+See the [Add-Ons](#add-ons) section below for information on custom plugins, and the [Example Plugin](#example-plugin) section for usage of the example Pokemon plugin included.
 
 ## Screenshots
 [![Main Screen](screenshots/screenshot-2.png?raw=true)](#Usage)
