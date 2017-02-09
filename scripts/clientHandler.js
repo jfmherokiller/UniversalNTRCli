@@ -1,7 +1,7 @@
 "use strict";
 
 var seq=0, fs = require('fs');
-
+var path = require('path');
 var NtrClient = require('ntrclient');
 
 var dialog = require('electron').remote.dialog;
@@ -30,7 +30,7 @@ function toggle3ds() {
     } else if(idSelect("conNTR").innerHTML=="Disconnect"){
         document.client.disconnect();
     }
-};
+}
 
 function conCall() {
     writeConsole("3ds Connected!");
@@ -220,7 +220,7 @@ function writeMemLocConsole(val){
 }
 
 function writeCredits(){
-    var msg = "\n";
+    let msg = "\n";
     msg+="Credits:\n";
     msg+="Cell9 - NTR\n";
     msg+="Cu3PO42 - Node NTR Client Library\n";
@@ -240,10 +240,19 @@ function removeOptions(selectTagId){
 }
 
 function pluginAct(){
-    var custPlug = document.createElement("script");
-    custPlug.src="./scripts/plugins/pokemon.js";
-    idSelect("header").appendChild(custPlug);
-    idSelect("pluginLoad").style.display = "none";
+    const scriptpathpart = './scripts/plugins/';
+    fs.readdir(scriptpathpart,function (err,files) {
+        files.forEach( function( file, index ) {
+            let scriptpath = path.join( scriptpathpart, file );
+            if (scriptpath.includes("plugin_"))
+            {
+                let custPlug = document.createElement("script");
+                custPlug.src=scriptpath;
+                idSelect("header").appendChild(custPlug);
+                idSelect("pluginLoad").style.display = "none";
+            }
+        });
+    });
 }
 
 document.addEventListener('DOMContentLoaded', function () {
