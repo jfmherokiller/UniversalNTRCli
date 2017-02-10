@@ -220,7 +220,7 @@ function writeMemLocConsole(val){
 }
 
 function writeCredits(){
-    let msg = "\n";
+    var msg = "\n";
     msg+="Credits:\n";
     msg+="Cell9 - NTR\n";
     msg+="Cu3PO42 - Node NTR Client Library\n";
